@@ -1,0 +1,38 @@
+
+  {% extends 'main.html' %}
+  {% block content %}
+  {% load static %}
+
+	<div id="tableContainer">
+	<div id="tableRow">
+	<section id="drinks">
+    <p>Tone: choose character's tone</p>
+    <select class="option">
+      <option>Tone</option>
+      <option> Girl Voice </option>
+    </select>
+    <form action="" method="POST" >
+      {% csrf_token %}
+    
+    <textarea name="text" value="Iqra is a good girl" placeholder='Iqra is a good girl 'class="form-control" style=" min-width:500px; max-width:100%;min-height:50px;height:100%;width:50%;"></textarea>
+      <br>
+      <input type="submit"  value="Convet To Speach" class="button">
+     
+    </form>
+	</section>
+
+  <audio  controls src="{% static 'hello.mp3' %}"></audio>
+    
+	</div> <!-- tableRow -->
+	</div> <!-- tableContainer -->
+
+    <footer>
+      &copy; 2023, Tech Film
+      <br>
+      Contact us...
+    </footer>
+
+    {% endblock content %}
+
+
+

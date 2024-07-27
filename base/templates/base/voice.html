@@ -1,0 +1,39 @@
+
+	{% extends 'main.html' %}
+	{% block content %}
+	{% load static %}
+
+
+	<div id="tableContainer">
+	<div id="tableRow">
+	<section id="drinks">
+		<h1>INPUT</h1><br>
+	<p>Voice: choose character's tone (WE'LL DO THIS LATER, USING TEXT TO SPEECH)</p>
+	<select class="option">
+		<option>Voice</option>
+		<option>The second option</option>
+		<option>The third option</option>
+	</select>
+	<form>
+	<textarea class="form-control" style=" min-width:500px; max-width:100%;min-height:50px;height:100%;width:50%;"></textarea>
+		<br>
+		<input type="submit" class="button">
+	</form>
+	</section>
+	<section id="main">
+		<h1>OUTPUT</h1>
+		<textarea rows="20"></textarea>
+	</section>
+
+
+	</div> <!-- tableRow -->
+	</div> <!-- tableContainer -->
+
+	<footer>
+		&copy; 2023, Tech Film
+		<br>
+		Contact us...
+	</footer>
+
+	
+{% endblock content %}

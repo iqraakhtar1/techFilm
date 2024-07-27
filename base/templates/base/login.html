@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>text</title>
+    <link rel="stylesheet" type="text/css" href="{% static  'style/login.css'%}">
+  </head>
+  <nav>
+    <ul>
+      <li class="selected"><a href="{%url 'home'%}">Home</a></li>
+      <li><a href=" {% url 'text' %} ">Voice</a></li>
+      <li><a href={% url 'login' %}>Login</a></li>
+    </ul>
+    </nav>
+<span display="inline">
+
+  <img id="headerLogo"
+  src="  {% static 'images/logo.svg'%}"class='logo'>
+  <div class="login-box" >
+  <h2>Login</h2>
+  <form>
+    <div class="user-box">
+      <input type="text" name="" required="">
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="" required="">
+      <label>Password</label>
+    </div>
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </a>
+  </form>
+</div>
+  <body width = "device-width">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Username</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="" required="">
+          <label>Password</label>
+        </div>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </form></span>
+    </div></body>
